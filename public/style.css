@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #aaa6a6;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.content {
+  width: 30rem;
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 2rem 3rem;
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.value {
+  width: 10rem;
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+  margin: 1rem auto;
+  text-align: center;
+  /* border: 1px solid #fff; */
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255);
+}
+.all-btn {
+  padding: 0 2rem 1rem 2rem;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+}
+/* .btn:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(29, 24, 24);
+} */
+
+.btn {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  color: #000;
+  margin: 0 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: rgb(38, 194, 38);
+}
+.btn::before {
+  content: "";
+  height: 0%;
+  width: 0%;
+  border-top: 2px solid yellow;
+  border-left: 2px solid yellow;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /* border-top-left-radius: 20px; */
+  /* overflow: hidden; */
+}
+.btn::after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 0%;
+  border-right: 2px solid yellow;
+  border-bottom: 2px solid yellow;
+  bottom: 0%;
+  right: 0%;
+  /* overflow: hidden; */
+}
+.btn:hover::before,
+.btn:hover::after {
+  width: 100%;
+  height: 100%;
+  color: black;
+  border-radius: 10px;
+
+  /* overflow: hidden; */
+}
+.btn:hover {
+  background: rgb(87, 82, 82);
+  color: white;
+}
